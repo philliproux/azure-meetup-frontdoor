@@ -1,0 +1,3 @@
+.\DeployInfra.ps1 -resourceGroup "azure-meetup-frontdoor-demo-3" -frontDoorName "azure-meetup-frontdoor-demo3" -webApp "azure-meetup-frontdoor-demo3" -webAppUrl "azure-meetup-frontdoor-demo3.azurewebsites.net" -appServicePlan "azure-meetup-frontdoor-demo3-appserviceplan" -appServicePlanSize "B1"
+
+az webapp deployment source config --name "azure-meetup-frontdoor-demo3" --resource-group "azure-meetup-frontdoor-demo-3" --repo-url "https://github.com/philliproux/active-frontdoor.git" --branch master --manual-integration
